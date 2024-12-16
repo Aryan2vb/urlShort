@@ -1,0 +1,1 @@
+This project is a URL shortener API built with Node.js, Express, and Prisma.  It shortens URLs and redirects short links to their long counterparts.  To run it, clone the repo, install dependencies, set up a PostgreSQL database, run Prisma migrations, and start the server.  The API has `/generate` (POST) to shorten URLs and `/:key` (GET) for redirection.
