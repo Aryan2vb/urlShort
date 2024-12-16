@@ -27,7 +27,7 @@ async function createShortUrl(longUrl) {
   const retries = 5;
   for (let i = 0; i < retries; i++) {
     try {
-      const key = generateKey(6);
+      const key = generateKey(5);
       const newShortUrl = await prisma.myurl.create({
         data: {
           shortUrl: key,
