@@ -60,9 +60,9 @@ app.post("/generate", async (req, res) => {
 app.get("/:key", async (req, res) => {
   const shortUrl = req.params.key;
   try {
-    const url = await prisma.myurl.findFirst({
+    const url = await prisma.myurl.findUnique({
       where: {
-        shortUrl,
+        shortUrl: shortUrl,
       },
     });
     // console.log(url);
